@@ -4,12 +4,13 @@ body {
     rgb(251, 222, 238) 15.6%,
     rgb(206, 201, 226) 80.3%
   );
+  font-family: "Roboto", system-ui;
 }
 
 .weather-app {
   background: #fdfdfe;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 50px auto;
   box-shadow: 0 30px 50px rgba(228, 225, 226);
   border-radius: 16px;
   padding: 30px;
