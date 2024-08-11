@@ -2,7 +2,7 @@ body {
   background: radial-gradient(
     circle at 10% 20%,
     rgb(251, 222, 238) 15.6%,
-    rgb(206, 201, 226) 80.3%
+    #cec9e2 80.3%
   );
   font-family: "Raleway", sans-serif;
 }
@@ -11,7 +11,24 @@ body {
   background: #fdfdfe;
   max-width: 600px;
   margin: 50px auto;
-  box-shadow: 0 30px 50px rgba(227, 226, 226);
+  box-shadow: 0 30px 50px rgb(238, 238, 238);
   border-radius: 16px;
   padding: 30px;
+}
+
+.search-form-input {
+  border: none;
+  border-radius: 6px;
+  width: 75%;
+  font-size: 16px;
+  padding: 15px 20px;
+  background-color: #efd4e2;
+}
+
+.search-form-button {
+  border-radius: 6px;
+  padding: 15px 20px;
+  border: none;
+  background: #9c89e7;
+  color: white;
 }
