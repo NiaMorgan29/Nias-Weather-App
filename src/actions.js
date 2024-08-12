@@ -7,11 +7,11 @@ function updateWeather(response) {
   let windSpeedVariable = document.querySelector("#wind-speed");
   let timeVariable = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-
-  console.log(response.data);
+  let iconVariable = document.querySelector("#icon");
 
   cityVariable.innerHTML = response.data.city;
   timeVariable.innerHTML = formatDate(date);
+  iconVariable.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
   temperatureVariable.innerHTML = Math.round(temperature);
   descriptionVariable.innerHTML = response.data.condition.description;
   humidityVariable.innerHTML = `${response.data.temperature.humidity}%`;
@@ -54,3 +54,5 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Curacao");
